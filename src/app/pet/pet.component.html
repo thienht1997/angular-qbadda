@@ -1,0 +1,14 @@
+ 
+<h2>Picture profile</h2>
+<label>
+  Picture name:
+  <input type="text" (change)="updateName($event.target.value)">
+</label>
+<br >
+<label>
+  Picture image:
+  <input type="url" (change)="updateImage($event.target.value)">
+</label>
+<br>
+<h3>Picture name: {{petName}}</h3>
+<img [src]="petImage" style="max-width: 100%">
